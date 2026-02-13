@@ -1,0 +1,84 @@
+
+.cozy-navbar {
+  background: #ffffff;
+  padding: 10px 24px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.cozy-navbar a {
+  text-decoration: none !important;
+}
+
+.cozy-navbar a:hover,
+.cozy-navbar a:focus,
+.cozy-navbar a:active {
+  text-decoration: none !important;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+}
+
+.cozy-nav-link {
+  margin: 0 16px 0 26px;
+  font-weight: 1000;
+  color: #333;
+  font-size: 20px; 
+}
+
+.cozy-brand{
+  font-size: 24px;
+  font-weight: 700;
+  color: #7a00ff;
+}
+
+.navbar .d-flex {
+  align-items: center;
+}
+
+.cozy-btn-primary,
+.cozy-btn-secondary {
+  height: 40px;
+  padding: 0 18px;
+  border-radius: 10px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cozy-btn-primary {
+  margin-bottom: 30%;
+  background: #7a00ff;
+  color: white;
+  border: none;
+}
+
+.cozy-btn-primary:hover {
+  background: #6500d8;
+}
+
+.cozy-btn-secondary {
+  margin-bottom: 20%;
+  background: transparent;
+  color: #7a00ff;
+  border: 2px solid #7a00ff;
+}
+
+.cozy-btn-secondary:hover {
+  background: #7a00ff;
+  color: white;
+}
+
+.navbar button.btn-outline-dark {
+  height: 40px;
+  padding: 0 18px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.btn-outline-dark {
+  margin-bottom: 20px;
+}

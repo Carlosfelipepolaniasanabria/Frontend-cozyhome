@@ -1,0 +1,56 @@
+
+.login-page {
+   margin-top: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f4f5f7;
+
+}
+
+
+@media (min-width: 768px) {
+  .cozy-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .cozy-input-group:nth-child(5),
+  .cozy-input-group:nth-child(6),
+  .cozy-input-group:nth-child(7),
+  .cozy-button {
+    grid-column: span 2;
+  }
+}
+
+.cozy-button {
+  margin-top: 14px;
+}
+
+.cozy-links {
+  margin-top: 18px;
+  text-align: center;
+}
+
+.cozy-link {
+  font-size: 14px;
+  font-weight: 600;
+  color: #7a00ff;
+  text-decoration: none;
+}
+
+.cozy-link:hover {
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
