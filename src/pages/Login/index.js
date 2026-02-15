@@ -10,7 +10,7 @@ export default function Login() {
     e.preventDefault();
 
     try {
-      const response = await fetch("https://cozyhome-backend-1050517811871.northamerica-south1.run.app/api/clients/Login", {
+      const response = await fetch("https://backend-cozyhome.onrender.com/api/clients/Login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"

@@ -13,7 +13,7 @@ export default function AdminPanel() {
     imagen: null
   });
 
-  const API_URL = "https://cozyhome-backend-1050517811871.northamerica-south1.run.app/api";
+  const API_URL = "https://backend-cozyhome.onrender.com/api";
   const token = localStorage.getItem("token");
 
   const cargarProductos = async () => {
@@ -145,7 +145,7 @@ export default function AdminPanel() {
               <td>{p.nombre}</td>
               <td>${p.precio}</td>
               <td>
-                <img src={`https://cozyhome-backend-1050517811871.northamerica-south1.run.app${p.imagen}`} width="70" />
+                <img src={`https://backend-cozyhome.onrender.com${p.imagen}`} width="70" />
               </td>
               <td>
                 <button

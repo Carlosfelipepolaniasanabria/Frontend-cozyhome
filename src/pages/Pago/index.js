@@ -42,7 +42,7 @@ export default function PaymentForm() {
   }
 
   try {
-    const response = await fetch("https://cozyhome-backend-1050517811871.northamerica-south1.run.app/api/sales", {
+    const response = await fetch("https://backend-cozyhome.onrender.com/api/sales", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -103,7 +103,7 @@ export default function PaymentForm() {
         <label>Correo electrónico</label>
         <input type="email" value={email} onChange={e => setEmail(e.target.value)} />
 
-        <div className="row">
+        <div className="row_pago">
           <div>
             <label>Nombres</label>
             <input type="text" value={nombres} onChange={e => setNombres(e.target.value)} />
@@ -114,7 +114,7 @@ export default function PaymentForm() {
           </div>
         </div>
 
-        <div className="row">
+        <div className="row_pago">
           <div>
             <label>Tipo de documento</label>
             <select value={tipoDocumento} onChange={e => setTipoDocumento(e.target.value)}>

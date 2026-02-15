@@ -63,7 +63,7 @@ export default function Sale() {
                   <td>{p.nombre}</td>
                   <td>${Number(p.precio).toLocaleString("es-CO")}</td>
                   <td>
-                    <img src={`http://localhost:8000${p.imagen}`} width="80" alt={p.nombre} />
+                    <img src={`https://backend-cozyhome.onrender.com${p.imagen}`} width="80" alt={p.nombre} />
                   </td>
                   <td>{p.cantidad || 1}</td>
                   <td>

@@ -9,7 +9,7 @@ export default function Pedidos() {
     if (!user?.identificacion) return;
 
     axios
-      .get(`https://cozyhome-backend-1050517811871.northamerica-south1.run.app/sales/user/${user.identificacion}`)
+      .get(`https://backend-cozyhome.onrender.com/sales/user/${user.identificacion}`)
       .then(res => setSales(res.data))
       .catch(console.error);
   }, []);

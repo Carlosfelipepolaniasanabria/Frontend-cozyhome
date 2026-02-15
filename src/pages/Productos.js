@@ -10,7 +10,7 @@ export default function Productos() {
   const navigate = useNavigate();
   useEffect(() => {
     axios
-      .get("http://localhost:8000/api/products")
+      .get("https://backend-cozyhome.onrender.com/api/products")
       .then(res => setProductos(res.data))
       .catch(err => console.error(err));
   }, []);
@@ -65,8 +65,8 @@ export default function Productos() {
         showWelcomeScreen: false,
         initialMessages: [
           "Hola, bienvenido a CozyHome!",
-          "Soy el asistente de CozyHome ",
-          "Puedo ayudarte a elegir productos "
+          "Soy el asistente  ",
+          "Porfavor coloca tu nombre, correo y número de documento para poder ayudarte mejor"
         ],
       });
     `;
@@ -90,11 +90,11 @@ export default function Productos() {
 
         <div className="row">
           {productos.map(p => (
-            <div className="col-md-4 mb-4" key={p.id}>
+            <div className="col-lg-3 col-md-4 col-sm-6 mb-4" key={p.id}>
               <div className="card h-100 shadow-sm">
 
                 <img
-                  src={`http://localhost:8000${p.imagen}`}
+                  src={`https://backend-cozyhome.onrender.com${p.imagen}`}
                   className="card-img-top"
                   alt={p.nombre}
                   style={{ height: "200px", objectFit: "cover" }}

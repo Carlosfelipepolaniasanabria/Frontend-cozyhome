@@ -51,13 +51,11 @@ select {
   border: 1px solid #ccc;
 }
 
-.row {
+.row_pago {
   display: flex;
   gap: 15px;
-}
+    flex: 1;
 
-.row div {
-  flex: 1;
 }
 
 button {
